@@ -58,7 +58,7 @@
                     Name="btnBorder"
                     Background="DeepSkyBlue">
                 <Button Style="{StaticResource buttonStyle}"
-                        Command="{Binding SumbitButtonCommand}"
+                        Command="{Binding SubmitButtonCommand}"
                         CommandParameter="{Binding ElementName=myStackPanel}"
                         Content="Sumbit">
                     

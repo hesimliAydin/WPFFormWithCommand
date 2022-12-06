@@ -79,7 +79,7 @@ namespace WPFFormWithCommand
                     firstNameTextBox!.BorderBrush = new SolidColorBrush(Colors.Red);
                     firstNameTextBox.BorderThickness = new Thickness(0, 0, 0, 5);
                     firstNameTextBox.Focus();
-                    button!.IsEnabled = false;
+                    button!.IsEnabled = true;
 
                 }
                 else
@@ -105,7 +105,7 @@ namespace WPFFormWithCommand
                     lastNameTextBox!.BorderBrush = new SolidColorBrush(Colors.Red);
                     lastNameTextBox.BorderThickness = new Thickness(0, 0, 0, 5);
                     lastNameTextBox.Focus();
-                    button!.IsEnabled = false;
+                    button!.IsEnabled = true;
 
                 }
                 else
@@ -141,7 +141,7 @@ namespace WPFFormWithCommand
                     phoneTextBox.BorderBrush = new SolidColorBrush(Colors.Red);
                     phoneTextBox.BorderThickness = new Thickness(0, 0, 0, 5);
                     phoneTextBox.Focus();
-                    button!.IsEnabled = false;
+                    button!.IsEnabled = true;
                 }
             });
 
@@ -169,7 +169,7 @@ namespace WPFFormWithCommand
 
                     button!.Foreground = new SolidColorBrush(Colors.Red);
                     EmailTextBox.Focus();
-                    button!.IsEnabled = false;
+                    button!.IsEnabled = true;
                 }
             });
 
