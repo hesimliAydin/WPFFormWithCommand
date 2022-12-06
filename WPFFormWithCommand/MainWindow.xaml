@@ -1,0 +1,73 @@
+﻿<Window x:Class="WPFFormWithCommand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFFormWithCommand"
+        mc:Ignorable="d"
+        Title="Form" Height="600" Width="400">
+    <Grid Background="#1A2127">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0"
+               Content="Form"
+               HorizontalContentAlignment="Center"
+               Foreground="DeepSkyBlue"
+               FontSize="40"/>
+
+        <StackPanel Name="myStackPanel" Grid.Row="1">
+            <Label  Style="{StaticResource labelStyle}"
+                    Content="First Name"/>
+            <TextBox Style="{StaticResource textBoxStyle}">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding FirstNameEnterCommand}" CommandParameter="{Binding ElementName=myStackPanel}"/>
+                </TextBox.InputBindings>
+                
+            </TextBox>
+
+            <Label Style="{StaticResource labelStyle}"
+                   Content="Last Name"/>
+            <TextBox Style="{StaticResource textBoxStyle}">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding LastNameEnterCommand}" CommandParameter="{Binding ElementName=myStackPanel}"/>
+                </TextBox.InputBindings>
+            </TextBox>
+
+            <Label Style="{StaticResource labelStyle}"
+                   Content="Phone"/>
+            <TextBox Style="{StaticResource textBoxStyle}">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding PhoneEnterCommand}" CommandParameter="{Binding ElementName=myStackPanel}"/>
+                </TextBox.InputBindings>
+                
+            </TextBox>
+
+            <Label Style="{StaticResource labelStyle}"
+                   Content="Email"/>
+            <TextBox Style="{StaticResource textBoxStyle}">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding EmailEnterCommand}" CommandParameter="{Binding ElementName=myStackPanel}"/>
+                    
+                </TextBox.InputBindings>
+            </TextBox>
+
+            <Border Style="{StaticResource borderStyleBtn}"
+                    Name="btnBorder"
+                    Background="DeepSkyBlue">
+                <Button Style="{StaticResource buttonStyle}"
+                        Command="{Binding SumbitButtonCommand}"
+                        CommandParameter="{Binding ElementName=myStackPanel}"
+                        Content="Sumbit">
+                    
+                </Button>
+            </Border>
+
+        </StackPanel>
+
+    </Grid>
+    
+    
+</Window>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFFormWithCommand", "WPFFormWithCommand\WPFFormWithCommand.csproj", "{88B4C307-69EA-4E0E-ADE4-C83225E67B2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88B4C307-69EA-4E0E-ADE4-C83225E67B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B4C307-69EA-4E0E-ADE4-C83225E67B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B4C307-69EA-4E0E-ADE4-C83225E67B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B4C307-69EA-4E0E-ADE4-C83225E67B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F662680-7818-40B6-A3BF-2F2AA3023B0A}
+	EndGlobalSection
+EndGlobal
